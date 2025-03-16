@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Toring CMSC 207 Mini-Project</title>
+        <link type="text/css" rel="stylesheet" href="css/my-first-stylesheet.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Toring's Web Profile</h1>
+            <nav>
+                <ul>
+                    <li class="selected">About Me</li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="portfolio.html">Services</a></li>
+                    <li><a href="portfolio.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <section>
+                <h2>About Me</h2>
+                <p><img id="display-image" src="images/grad1.jpg" onclick="swapImage()" alt="Me!"/></p>
+                <p class="multi-line">Hello everyone, my name is Rowell. I am a chemical engineering graduate but am currently working in the IT field. 
+                    Since I'm a career shifter, I wanted to learn more technical knowledge and skills in computer science. 
+                    Hence, I enrolled in the Diploma in Computer Science program. Nice to meet you and welcome to my web profile!</p>
+                    <i>(Click image to change)</i>
+            </section>
+        </article>
+
+        <aside>
+            <section>
+                <h2>Hobbies & Interests</h2>
+                <ol>
+                    <li>Watching Movies/Series
+                        <p class="brief-desc">can be any genre (as long as the premise is interesting) and 
+                            available via streaming platforms (Netflix, Disney+, Prime)</p>
+                    </li>
+                    <li>Playing Games
+                        <p class="brief-desc">mainly playing blockchain games currently</p>
+                    </li>
+                    <li>Listening to Music</li>
+                        <p class="brief-desc">background music when doing productive things (like acads)</p>
+                    <li>Playing with our pets</li>
+                        <p class="brief-desc">interacting with our dogs and cats is such a stress reliever</p>
+                </ol>
+            </section> 
+        </aside>
+
+        <footer>
+            <p class="contact"><i class="fa-solid fa-envelope"></i> <a href="mailto:rowtoring@gmail.com">rowtoring@gmail.com</a></p>
+            <p class="socmed">
+                <a href="https://www.facebook.com/profile.php"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            </p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/85c5e8cc5e.js" crossorigin="anonymous"></script>
+        <script>
+            function swapImage() {
+                var imageDisplayed = document.getElementById('display-image');
+                if (imageDisplayed.src.match("images/grad1.jpg")) {
+                    imageDisplayed.src = "images/dog1.jpg";
+                }
+                else {
+                    imageDisplayed.src = "images/grad1.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
